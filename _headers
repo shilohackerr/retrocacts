@@ -1,0 +1,41 @@
+# ============================================================
+# _headers — RetroCoats™
+# Cabeceras de seguridad para Netlify
+# Equivalente a las cabeceras del .htaccess
+# Coloca este archivo en la raíz de tu carpeta retrocoats/
+# ============================================================
+
+# Aplica a todas las páginas
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(self "https://www.paypal.com")
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.paypal.com https://www.paypalobjects.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.paypalobjects.com; frame-src https://www.paypal.com https://www.sandbox.paypal.com; connect-src 'self' https://api.paypal.com; object-src 'none'; base-uri 'self'
+
+# Caché larga para assets estáticos (CSS, JS, fuentes)
+/assets/css/*
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+/assets/js/*
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+# Caché muy larga para imágenes
+/assets/images/*
+  Cache-Control: public, max-age=15552000, immutable
+
+# Sin caché para HTML (siempre fresco para SEO)
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Sin caché para sitemap y robots (Google debe ver siempre la versión más reciente)
+/sitemap.xml
+  Cache-Control: no-cache
+
+/sitemap-products.xml
+  Cache-Control: no-cache
+
+/robots.txt
+  Cache-Control: no-cache

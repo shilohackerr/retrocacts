@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>RetroCoats™ | Abrigos Retro 90s en Panamá — Tierras Altas, Chiriquí</title>
+<meta name="description" content="Descubre la colección más auténtica de abrigos retro de los años 90 en Panamá. Clásicos, Urban y Sport 90s. Pago seguro PayPal. Envíos a todo el país."/>
+<meta name="keywords" content="abrigos retro panama, chaquetas 90s panama, moda retro chiriqui, abrigos vintage panama, retrocoats"/>
+<meta name="author" content="Edwin Pitty"/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://retrocoats.netlify.app/"/>
+<meta property="og:title" content="RetroCoats™ | Abrigos Retro 90s en Panamá"/>
+<meta property="og:description" content="La colección más auténtica de abrigos retro 90s en Panamá."/>
+<meta property="og:image" content="https://retrocoats.netlify.app/assets/images/og-retrocoats.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)"/>
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"/>
+<link rel="canonical" href="https://retrocoats.netlify.app/"/>
+<link rel="manifest" href="/manifest.json"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<script src="https://www.paypal.com/sdk/js?client-id=TU_CLIENT_ID_AQUI&currency=USD&locale=es_PA" defer></script>
+
+<style>
+/* ═══════════════════════════════════════════════════
+   VARIABLES — MINIMALISMO NEGRO/BLANCO
+═══════════════════════════════════════════════════ */
+:root {
+  --black:      #0a0a0a;
+  --white:      #f8f8f6;
+  --gray-100:   #f0efed;
+  --gray-200:   #e0dedd;
+  --gray-400:   #999896;
+  --gray-600:   #555452;
+  --gray-800:   #2a2928;
+  --accent:     #c8a96e;
+  --accent-dim: rgba(200,169,110,0.15);
+
+  --bg:         #f8f8f6;
+  --bg-card:    #ffffff;
+  --text:       #0a0a0a;
+  --text-muted: #888;
+  --border:     rgba(0,0,0,0.08);
+  --shadow:     0 2px 40px rgba(0,0,0,0.06);
+
+  --glass-bg:     rgba(255,255,255,0.55);
+  --glass-border: rgba(255,255,255,0.8);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,0.12);
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'Montserrat', sans-serif;
+  --font-serif:   'Playfair Display', serif;
+
+  --nav-h: 72px;
+  --ease:  cubic-bezier(0.16,1,0.3,1);
+}
+
+[data-theme="dark"] {
+  --bg:         #0a0a0a;
+  --bg-card:    #111110;
+  --text:       #f0efed;
+  --text-muted: #666;
+  --border:     rgba(255,255,255,0.07);
+  --shadow:     0 2px 40px rgba(0,0,0,0.4);
+  --glass-bg:     rgba(10,10,10,0.6);
+  --glass-border: rgba(255,255,255,0.08);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+/* ═══════════════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;transition:background .4s,color .4s}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+/* Skip link */
+.skip{position:absolute;top:-40px;left:0;background:var(--black);color:var(--white);padding:8px 16px;font-size:.8rem;z-index:9999;transition:top .2s}
+.skip:focus{top:0}
+
+/* ═══════════════════════════════════════════════════
+   CURSOR PERSONALIZADO
+═══════════════════════════════════════════════════ */
+.cursor{
+  width:8px;height:8px;
+  background:var(--text);
+  border-radius:50%;
+  position:fixed;
+  pointer-events:none;
+  z-index:99999;
+  transform:translate(-50%,-50%);
+  transition:transform .1s,width .3s var(--ease),height .3s var(--ease),background .3s;
+  mix-blend-mode:difference;
+}
+.cursor-ring{
+  width:36px;height:36px;
+  border:1px solid var(--text);
+  border-radius:50%;
+  position:fixed;
+  pointer-events:none;
+  z-index:99998;
+  transform:translate(-50%,-50%);
+  transition:transform .12s var(--ease),width .4s var(--ease),height .4s var(--ease),opacity .3s;
+  opacity:.5;
+  mix-blend-mode:difference;
+}
+.cursor.hover{width:20px;height:20px}
+.cursor-ring.hover{width:60px;height:60px;opacity:.2}
+
+/* ═══════════════════════════════════════════════════
+   NAVBAR
+═══════════════════════════════════════════════════ */
+.navbar{
+  position:fixed;top:0;left:0;right:0;
+  height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;
+  z-index:1000;
+  transition:background .4s,backdrop-filter .4s,border-color .4s;
+  border-bottom:1px solid transparent;
+}
+.navbar.scrolled{
+  background:var(--glass-bg);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-color:var(--border);
+}
+.nav-logo{
+  font-family:var(--font-display);
+  font-size:1.6rem;
+  font-weight:600;
+  letter-spacing:.15em;
+  color:var(--text);
+}
+.nav-logo span{color:var(--accent);font-style:italic}
+.nav-links{
+  display:flex;align-items:center;gap:36px;
+  list-style:none;
+}
+.nav-links a{
+  font-size:.72rem;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+  transition:color .3s;
+  position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-4px;left:0;
+  width:0;height:1px;background:var(--text);
+  transition:width .3s var(--ease);
+}
+.nav-links a:hover{color:var(--text)}
+.nav-links a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:16px}
+#theme-btn{
+  width:40px;height:40px;
+  border-radius:50%;
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;
+  color:var(--text-muted);
+  transition:all .3s;
+  background:var(--bg-card);
+}
+#theme-btn:hover{color:var(--text);border-color:var(--text)}
+
+/* ═══════════════════════════════════════════════════
+   HERO — 3D LOGO + PARALLAX
+═══════════════════════════════════════════════════ */
+.hero{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  position:relative;
+  overflow:hidden;
+  padding-top:var(--nav-h);
+}
+
+/* Fondo con grano sutil */
+.hero::before{
+  content:'';
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(200,169,110,0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,0,0,0.03) 0%, transparent 60%);
+  pointer-events:none;
+}
+
+.hero-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:80px;
+  max-width:1200px;
+  width:100%;
+  padding:0 48px;
+}
+
+/* LOGO 3D */
+.logo-3d-wrap{
+  perspective:800px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.logo-3d{
+  width:340px;height:340px;
+  position:relative;
+  transform-style:preserve-3d;
+  transition:transform .08s linear;
+  will-change:transform;
+}
+.logo-3d-face{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  border-radius:50%;
+}
+.logo-3d-bg{
+  position:absolute;inset:0;
+  border-radius:50%;
+  border:1px solid var(--border);
+  background:var(--bg-card);
+  box-shadow:
+    0 0 0 1px var(--border),
+    0 20px 80px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+  transition:box-shadow .3s;
+}
+.logo-3d:hover .logo-3d-bg{
+  box-shadow:
+    0 0 0 1px var(--border),
+    0 40px 120px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+.logo-coat{
+  font-size:7rem;
+  line-height:1;
+  filter:drop-shadow(0 8px 24px rgba(0,0,0,0.15));
+  transition:transform .3s var(--ease);
+  position:relative;z-index:1;
+}
+.logo-3d:hover .logo-coat{transform:scale(1.05) translateY(-4px)}
+.logo-brand{
+  font-family:var(--font-display);
+  font-size:1.6rem;
+  font-weight:600;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--text);
+  margin-top:12px;
+  position:relative;z-index:1;
+}
+.logo-year{
+  font-family:var(--font-body);
+  font-size:.65rem;
+  font-weight:300;
+  letter-spacing:.4em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-top:6px;
+  position:relative;z-index:1;
+}
+.logo-ring{
+  position:absolute;inset:-20px;
+  border-radius:50%;
+  border:1px dashed var(--border);
+  animation:spin 30s linear infinite;
+}
+.logo-ring-2{
+  position:absolute;inset:-40px;
+  border-radius:50%;
+  border:1px solid var(--accent-dim);
+  animation:spin 50s linear infinite reverse;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Hero texto */
+.hero-text{}
+.hero-eyebrow{
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:24px;
+  display:flex;align-items:center;gap:12px;
+}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--accent)}
+.hero-h1{
+  font-family:var(--font-display);
+  font-size:clamp(3.5rem,6vw,6rem);
+  font-weight:300;
+  line-height:1.05;
+  letter-spacing:-.01em;
+  margin-bottom:28px;
+}
+.hero-h1 em{
+  font-style:italic;
+  color:var(--accent);
+}
+.hero-desc{
+  font-size:.85rem;
+  font-weight:300;
+  line-height:1.8;
+  color:var(--text-muted);
+  max-width:380px;
+  margin-bottom:48px;
+}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:14px 32px;
+  border:1px solid var(--text);
+  font-size:.72rem;
+  font-weight:500;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--text);
+  transition:all .3s var(--ease);
+  position:relative;
+  overflow:hidden;
+}
+.hero-cta::before{
+  content:'';
+  position:absolute;inset:0;
+  background:var(--text);
+  transform:translateX(-101%);
+  transition:transform .4s var(--ease);
+}
+.hero-cta:hover::before{transform:translateX(0)}
+.hero-cta:hover{color:var(--bg)}
+.hero-cta span{position:relative;z-index:1}
+.hero-cta svg{position:relative;z-index:1;transition:transform .3s var(--ease)}
+.hero-cta:hover svg{transform:translateX(4px)}
+
+.hero-stats{
+  display:flex;gap:40px;margin-top:56px;
+  padding-top:40px;
+  border-top:1px solid var(--border);
+}
+.stat-num{
+  font-family:var(--font-display);
+  font-size:2.2rem;
+  font-weight:300;
+  line-height:1;
+  color:var(--text);
+}
+.stat-label{
+  font-size:.65rem;
+  font-weight:400;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+  margin-top:4px;
+}
+
+/* Scroll indicator */
+.scroll-hint{
+  position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+}
+.scroll-hint span{
+  font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-muted);
+}
+.scroll-line{
+  width:1px;height:48px;background:linear-gradient(to bottom,var(--text-muted),transparent);
+  animation:scrollDrop 1.8s ease-in-out infinite;
+}
+@keyframes scrollDrop{0%,100%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
+
+/* ═══════════════════════════════════════════════════
+   MARQUEE
+═══════════════════════════════════════════════════ */
+.marquee-wrap{
+  overflow:hidden;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:16px 0;
+  background:var(--bg-card);
+}
+.marquee-track{
+  display:flex;gap:0;
+  animation:marqueeFwd 28s linear infinite;
+  white-space:nowrap;
+}
+.marquee-track:hover{animation-play-state:paused}
+.marquee-item{
+  display:inline-flex;align-items:center;gap:32px;
+  padding:0 32px;
+  font-size:.68rem;
+  font-weight:400;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+}
+.marquee-dot{color:var(--accent);font-size:.5rem}
+@keyframes marqueeFwd{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ═══════════════════════════════════════════════════
+   SECCIONES — LAYOUT
+═══════════════════════════════════════════════════ */
+.section{padding:120px 48px;max-width:1200px;margin:0 auto}
+.section-header{margin-bottom:64px}
+.section-eyebrow{
+  font-size:.65rem;font-weight:500;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--accent);
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
+}
+.section-eyebrow::before{content:'';width:24px;height:1px;background:var(--accent)}
+.section-title{
+  font-family:var(--font-display);
+  font-size:clamp(2rem,4vw,3.5rem);
+  font-weight:300;
+  line-height:1.1;
+  letter-spacing:-.01em;
+}
+.section-title em{font-style:italic;color:var(--accent)}
+
+/* ═══════════════════════════════════════════════════
+   TABS DE CATEGORÍAS
+═══════════════════════════════════════════════════ */
+.tabs-wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 48px 120px}
+.tabs-nav{
+  display:flex;gap:0;
+  border-bottom:1px solid var(--border);
+  margin-bottom:64px;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.tabs-nav::-webkit-scrollbar{display:none}
+.tab-btn{
+  padding:16px 32px;
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+  border-bottom:2px solid transparent;
+  transition:all .3s;
+  white-space:nowrap;
+  margin-bottom:-1px;
+}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--text);border-bottom-color:var(--text)}
+.tab-panel{display:none}
+.tab-panel.active{display:block;animation:fadeUp .5s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══════════════════════════════════════════════════
+   PRODUCT GRID
+═══════════════════════════════════════════════════ */
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+}
+.product-card{
+  background:var(--bg-card);
+  position:relative;
+  overflow:hidden;
+  group:true;
+}
+.product-img-wrap{
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  background:var(--gray-100);
+}
+[data-theme="dark"] .product-img-wrap{background:var(--gray-800)}
+.product-img{
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform .7s var(--ease);
+  display:flex;align-items:center;justify-content:center;
+}
+.product-card:hover .product-img{transform:scale(1.04)}
+
+/* Imagen real usando SVG/emoji como placeholder premium */
+.product-img-placeholder{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:8rem;
+  background:var(--gray-100);
+  transition:transform .7s var(--ease);
+  position:relative;
+}
+[data-theme="dark"] .product-img-placeholder{background:var(--gray-800)}
+.product-card:hover .product-img-placeholder{transform:scale(1.04)}
+
+/* Imagen real con fetch de Unsplash */
+.product-real-img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center top;
+  transition:transform .7s var(--ease);
+}
+.product-card:hover .product-real-img{transform:scale(1.05)}
+
+.product-tag{
+  position:absolute;top:16px;left:16px;
+  padding:4px 10px;
+  background:var(--bg);
+  font-size:.6rem;
+  font-weight:500;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--text);
+}
+.product-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%);
+  opacity:0;
+  transition:opacity .4s;
+}
+.product-card:hover .product-overlay{opacity:1}
+
+/* GLASSMORPHISM BUY BUTTON */
+.btn-buy{
+  position:absolute;bottom:20px;left:50%;
+  transform:translateX(-50%) translateY(8px);
+  opacity:0;
+  white-space:nowrap;
+  padding:12px 28px;
+  background:var(--glass-bg);
+  backdrop-filter:blur(20px) saturate(200%);
+  -webkit-backdrop-filter:blur(20px) saturate(200%);
+  border:1px solid var(--glass-border);
+  border-radius:2px;
+  font-size:.68rem;
+  font-weight:500;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:#fff;
+  box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,0.3);
+  transition:opacity .3s,transform .3s var(--ease),box-shadow .3s;
+  cursor:pointer;
+  overflow:hidden;
+}
+.btn-buy::before{
+  content:'';
+  position:absolute;top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
+  transition:left .5s;
+}
+.btn-buy:hover::before{left:100%}
+.product-card:hover .btn-buy{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+.btn-buy:hover{
+  box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,0.4),0 0 20px rgba(255,255,255,0.1);
+}
+
+.product-info{
+  padding:20px 24px;
+  border-top:1px solid var(--border);
+}
+.product-cat{
+  font-size:.6rem;
+  font-weight:400;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:6px;
+}
+.product-name{
+  font-family:var(--font-serif);
+  font-size:1.05rem;
+  font-weight:400;
+  color:var(--text);
+  margin-bottom:4px;
+}
+.product-desc-short{
+  font-size:.72rem;
+  font-weight:300;
+  color:var(--text-muted);
+  line-height:1.6;
+  margin-bottom:12px;
+}
+.product-footer{
+  display:flex;align-items:center;justify-content:space-between;
+}
+.product-price{
+  font-family:var(--font-display);
+  font-size:1.3rem;
+  font-weight:400;
+  color:var(--text);
+}
+.product-rating{
+  font-size:.65rem;
+  color:var(--accent);
+  letter-spacing:.05em;
+}
+.paypal-wrap{
+  padding:12px 24px 16px;
+  border-top:1px solid var(--border);
+  background:var(--glass-bg);
+  backdrop-filter:blur(12px);
+  display:none;
+}
+
+/* ═══════════════════════════════════════════════════
+   RASTREO DE ENVÍO
+═══════════════════════════════════════════════════ */
+.tracker-section{
+  background:var(--bg-card);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.tracker-inner{
+  max-width:680px;
+  margin:0 auto;
+  padding:100px 48px;
+}
+.tracker-form{
+  display:flex;gap:0;
+  border:1px solid var(--border);
+  overflow:hidden;
+  margin:40px 0;
+}
+.tracker-input{
+  flex:1;
+  padding:16px 20px;
+  background:transparent;
+  border:none;
+  outline:none;
+  font-family:var(--font-body);
+  font-size:.85rem;
+  font-weight:300;
+  color:var(--text);
+  letter-spacing:.05em;
+}
+.tracker-input::placeholder{color:var(--text-muted)}
+.tracker-submit{
+  padding:16px 28px;
+  background:var(--text);
+  color:var(--bg);
+  font-size:.68rem;
+  font-weight:500;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  transition:opacity .2s;
+  border:none;
+  cursor:pointer;
+  font-family:var(--font-body);
+}
+.tracker-submit:hover{opacity:.8}
+
+.track-steps{
+  display:flex;justify-content:space-between;
+  position:relative;
+  margin:32px 0 24px;
+}
+.track-steps::before{
+  content:'';position:absolute;
+  top:11px;left:11px;right:11px;
+  height:1px;background:var(--border);
+}
+.track-steps::after{
+  content:'';position:absolute;
+  top:11px;left:11px;
+  height:1px;background:var(--text);
+  transition:width .6s var(--ease);
+  width:var(--progress,0%);
+}
+.step-item{
+  display:flex;flex-direction:column;
+  align-items:center;gap:10px;
+  z-index:1;flex:1;
+}
+.step-dot{
+  width:22px;height:22px;
+  border-radius:50%;
+  border:1px solid var(--border);
+  background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.55rem;
+  transition:all .3s;
+}
+.step-dot.done{background:var(--text);border-color:var(--text);color:var(--bg)}
+.step-dot.active{background:var(--accent);border-color:var(--accent);animation:stepPulse 1.5s infinite}
+@keyframes stepPulse{0%,100%{box-shadow:0 0 0 0 rgba(200,169,110,0.4)}50%{box-shadow:0 0 0 8px rgba(200,169,110,0)}}
+.step-label{
+  font-size:.55rem;font-weight:400;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-muted);text-align:center;line-height:1.4;
+}
+.track-result{
+  display:none;
+  padding:20px;
+  border:1px solid var(--border);
+  font-size:.8rem;
+  font-weight:300;
+  line-height:1.8;
+  color:var(--text-muted);
+}
+.track-result.show{display:block}
+.track-hl{color:var(--text);font-weight:500}
+
+/* ═══════════════════════════════════════════════════
+   SECCIÓN CONTACTO
+═══════════════════════════════════════════════════ */
+.contact-section{
+  background:var(--black);
+  color:var(--white);
+  padding:120px 48px;
+}
+.contact-inner{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:start;
+}
+.contact-left .section-eyebrow{color:var(--accent)}
+.contact-left .section-title{color:var(--white)}
+.contact-left .section-title em{color:var(--accent)}
+.contact-tagline{
+  font-size:.82rem;font-weight:300;
+  line-height:1.8;
+  color:rgba(255,255,255,0.5);
+  margin-top:20px;
+  max-width:360px;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.08);
+}
+.contact-card{
+  padding:32px;
+  background:var(--black);
+  transition:background .3s;
+}
+.contact-card:hover{background:#111}
+.contact-icon{
+  font-size:1.4rem;margin-bottom:16px;
+  filter:grayscale(1) brightness(1.5);
+}
+.contact-label{
+  font-size:.6rem;font-weight:500;
+  letter-spacing:.25em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:8px;
+}
+.contact-value{
+  font-family:var(--font-serif);
+  font-size:.95rem;font-weight:400;
+  color:rgba(255,255,255,0.85);
+  line-height:1.5;
+}
+.contact-value a{
+  color:inherit;
+  transition:color .2s;
+}
+.contact-value a:hover{color:var(--accent)}
+
+/* ═══════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════ */
+.footer{
+  border-top:1px solid var(--border);
+  padding:48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:24px;
+  background:var(--bg-card);
+}
+.footer-brand{
+  font-family:var(--font-display);
+  font-size:1.2rem;
+  font-weight:300;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+.footer-brand span{color:var(--accent);font-style:italic}
+.footer-links{
+  display:flex;gap:32px;list-style:none;flex-wrap:wrap;
+}
+.footer-links a{
+  font-size:.65rem;font-weight:400;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--text-muted);
+  transition:color .2s;
+}
+.footer-links a:hover{color:var(--text)}
+.footer-copy{
+  font-size:.65rem;font-weight:300;
+  letter-spacing:.05em;color:var(--text-muted);
+}
+
+/* ═══════════════════════════════════════════════════
+   DIVIDER DECORATIVO
+═══════════════════════════════════════════════════ */
+.divider{
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+  opacity:.3;
+  margin:0;
+}
+
+/* ═══════════════════════════════════════════════════
+   LOADER
+═══════════════════════════════════════════════════ */
+.loader{
+  position:fixed;inset:0;
+  background:var(--black);
+  z-index:99999;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:24px;
+  transition:opacity .8s var(--ease),visibility .8s;
+}
+.loader.out{opacity:0;visibility:hidden}
+.loader-logo{
+  font-family:var(--font-display);
+  font-size:2.5rem;
+  font-weight:300;
+  letter-spacing:.4em;
+  text-transform:uppercase;
+  color:var(--white);
+  opacity:0;
+  animation:loaderFade .6s .2s var(--ease) forwards;
+}
+.loader-logo em{color:var(--accent);font-style:italic}
+.loader-line{
+  width:160px;height:1px;
+  background:rgba(255,255,255,0.1);
+  position:relative;overflow:hidden;
+}
+.loader-progress{
+  position:absolute;top:0;left:0;
+  height:100%;width:0;
+  background:var(--accent);
+  transition:width .05s linear;
+}
+.loader-text{
+  font-size:.6rem;font-weight:400;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(255,255,255,0.3);
+  opacity:0;
+  animation:loaderFade .6s .4s var(--ease) forwards;
+}
+@keyframes loaderFade{to{opacity:1}}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════ */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:48px;text-align:center;padding:80px 24px 40px}
+  .logo-3d-wrap{order:-1}
+  .logo-3d{width:260px;height:260px}
+  .hero-desc{margin:0 auto 40px}
+  .hero-cta{margin:0 auto}
+  .hero-stats{justify-content:center}
+  .hero-eyebrow{justify-content:center}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-inner{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .navbar{padding:0 24px}
+  .nav-links{display:none}
+  .section{padding:80px 24px}
+  .tabs-wrap{padding:0 24px 80px}
+  .product-grid{grid-template-columns:1fr}
+  .tracker-inner{padding:80px 24px}
+  .contact-section{padding:80px 24px}
+  .contact-grid{grid-template-columns:1fr}
+  .footer{padding:32px 24px;flex-direction:column;align-items:flex-start}
+  .logo-3d{width:220px;height:220px}
+  .logo-coat{font-size:5.5rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .logo-3d,.logo-ring,.logo-ring-2,.marquee-track{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- SKIP -->
+<a class="skip" href="#colecciones">Saltar al contenido</a>
+
+<!-- LOADER -->
+<div class="loader" id="loader" role="status" aria-label="Cargando RetroCoats™">
+  <div class="loader-logo">Retro<em>Coats</em></div>
+  <div class="loader-line"><div class="loader-progress" id="loaderProg"></div></div>
+  <div class="loader-text" id="loaderTxt">Cargando colección</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="/" class="nav-logo" aria-label="RetroCoats™ inicio">Retro<span>Coats</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="#colecciones">Colecciones</a></li>
+    <li><a href="#rastreo">Rastreo</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button id="theme-btn" aria-label="Cambiar tema">☀️</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Bienvenida RetroCoats™">
+  <div class="hero-inner">
+
+    <!-- LOGO 3D -->
+    <div class="logo-3d-wrap" aria-hidden="true">
+      <div class="logo-3d" id="logo3d">
+        <div class="logo-ring"></div>
+        <div class="logo-ring-2"></div>
+        <div class="logo-3d-face">
+          <div class="logo-3d-bg"></div>
+          <div class="logo-coat">🧥</div>
+          <div class="logo-brand">RetroCoats</div>
+          <div class="logo-year">Est. 1993 · Panamá</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="hero-text">
+      <div class="hero-eyebrow">Colección 2024</div>
+      <h1 class="hero-h1">
+        El estilo<br>
+        de los <em>90s</em><br>
+        vive aquí
+      </h1>
+      <p class="hero-desc">
+        Abrigos auténticos con la esencia de una era inolvidable.
+        Cada prenda cuenta una historia. Envíos a todo Panamá.
+      </p>
+      <a href="#colecciones" class="hero-cta">
+        <span>Ver colección</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">9+</div>
+          <div class="stat-label">Modelos</div>
+        </div>
+        <div>
+          <div class="stat-num">3</div>
+          <div class="stat-label">Colecciones</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Seguro</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- duplicado para loop continuo -->
+    <span class="marquee-item">Envíos a todo Panamá <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Pago seguro PayPal <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Abrigos Retro 90s <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Tierras Altas, Chiriquí <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Rastreo en tiempo real <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Nueva colección disponible <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Envíos a todo Panamá <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Pago seguro PayPal <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Abrigos Retro 90s <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Tierras Altas, Chiriquí <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Rastreo en tiempo real <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Nueva colección disponible <span class="marquee-dot">◆</span></span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- COLECCIONES -->
+<div id="colecciones">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">Catálogo</div>
+      <h2 class="section-title">Nuestras <em>Colecciones</em></h2>
+    </div>
+  </div>
+
+  <div class="tabs-wrap">
+    <div class="tabs-nav" role="tablist" aria-label="Categorías de abrigos">
+      <button class="tab-btn active" data-tab="clasicos" role="tab" aria-selected="true"  id="tbtn-clasicos" aria-controls="tpanel-clasicos">Clásicos</button>
+      <button class="tab-btn"        data-tab="urban"    role="tab" aria-selected="false" id="tbtn-urban"    aria-controls="tpanel-urban"   >Urban</button>
+      <button class="tab-btn"        data-tab="sport"    role="tab" aria-selected="false" id="tbtn-sport"    aria-controls="tpanel-sport"   >Sport 90s</button>
+    </div>
+
+    <!-- TAB CLÁSICOS -->
+    <div class="tab-panel active" id="tpanel-clasicos" role="tabpanel" aria-labelledby="tbtn-clasicos">
+      <div class="product-grid">
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img" 
+                 src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=600&h=800&fit=crop&crop=top"
+                 alt="Chester Velvet '92 — Abrigo de terciopelo vintage"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-tag">Nuevo</div>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp1','89.99','Chester Velvet 92')" aria-label="Comprar Chester Velvet 92">
+              Comprar — $89.99
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Clásicos</div>
+            <h3 class="product-name" itemprop="name">Chester Velvet '92</h3>
+            <p class="product-desc-short" itemprop="description">Terciopelo vintage, cuello solapado, forro interior a rayas.</p>
+            <div class="product-footer">
+              <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="USD"/>
+                <span itemprop="price" content="89.99">$89.99</span>
+              </div>
+              <div class="product-rating" aria-label="4.8 estrellas">★★★★★ 4.8</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp1" aria-live="polite"></div>
+        </article>
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=800&fit=crop&crop=top"
+                 alt="Overcoat Plaid '94 — Abrigo a cuadros escoceses"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp2','74.99','Overcoat Plaid 94')" aria-label="Comprar Overcoat Plaid 94">
+              Comprar — $74.99
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Clásicos</div>
+            <h3 class="product-name" itemprop="name">Overcoat Plaid '94</h3>
+            <p class="product-desc-short" itemprop="description">Cuadros escoceses, botones de madera, bolsillos profundos.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>$74.99</span></div>
+              <div class="product-rating">★★★★☆ 4.6</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp2" aria-live="polite"></div>
+        </article>
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1608234808654-2a8875faa7fd?w=600&h=800&fit=crop&crop=top"
+                 alt="Trench Clásico '90 — Impermeable clásico camel"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-tag">Oferta</div>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp3','65.00','Trench Clasico 90')" aria-label="Comprar Trench Clásico 90">
+              Comprar — $65.00
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Clásicos</div>
+            <h3 class="product-name" itemprop="name">Trench Clásico '90</h3>
+            <p class="product-desc-short" itemprop="description">Impermeable icónico, cinturón ajustable, color camel.</p>
+            <div class="product-footer">
+              <div class="product-price"><span>$65.00</span></div>
+              <div class="product-rating">★★★★★ 4.9</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp3" aria-live="polite"></div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- TAB URBAN -->
+    <div class="tab-panel" id="tpanel-urban" role="tabpanel" aria-labelledby="tbtn-urban">
+      <div class="product-grid">
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&h=800&fit=crop&crop=top"
+                 alt="Bomber Urban '96 — Chaqueta bomber nylon NYC"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-tag">Top</div>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp4','59.99','Bomber Urban 96')">Comprar — $59.99</button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Urban</div>
+            <h3 class="product-name" itemprop="name">Bomber Urban '96</h3>
+            <p class="product-desc-short">Nylon con mangas contrastantes, parches bordados. NYC style.</p>
+            <div class="product-footer">
+              <div class="product-price">$59.99</div>
+              <div class="product-rating">★★★★★ 4.7</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp4" aria-live="polite"></div>
+        </article>
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1520975954732-35dd22299614?w=600&h=800&fit=crop&crop=top"
+                 alt="Parka Utility '95 — Parka militar bolsillos múltiples"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp5','79.99','Parka Utility 95')">Comprar — $79.99</button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Urban</div>
+            <h3 class="product-name" itemprop="name">Parka Utility '95</h3>
+            <p class="product-desc-short">Militar con múltiples bolsillos, capucha desmontable, forro polar.</p>
+            <div class="product-footer">
+              <div class="product-price">$79.99</div>
+              <div class="product-rating">★★★★☆ 4.5</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp5" aria-live="polite"></div>
+        </article>
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=800&fit=crop"
+                 alt="Windbreaker '98 — Cortavientos colores neón 90s"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-tag">Últimas unidades</div>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp6','49.99','Windbreaker 98')">Comprar — $49.99</button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Urban</div>
+            <h3 class="product-name" itemprop="name">Windbreaker '98</h3>
+            <p class="product-desc-short">Colores neón, estampado geométrico. Ícono del streetwear 90s.</p>
+            <div class="product-footer">
+              <div class="product-price">$49.99</div>
+              <div class="product-rating">★★★★☆ 4.4</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp6" aria-live="polite"></div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- TAB SPORT -->
+    <div class="tab-panel" id="tpanel-sport" role="tabpanel" aria-labelledby="tbtn-sport">
+      <div class="product-grid">
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&h=800&fit=crop&crop=top"
+                 alt="Varsity Jacket '93 — Chaqueta universitaria cuero y lana"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-tag">Nuevo</div>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp7','99.99','Varsity Jacket 93')">Comprar — $99.99</button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Sport 90s</div>
+            <h3 class="product-name" itemprop="name">Varsity Jacket '93</h3>
+            <p class="product-desc-short">Cuero y lana, número en pecho, rayas en mangas. Universitario.</p>
+            <div class="product-footer">
+              <div class="product-price">$99.99</div>
+              <div class="product-rating">★★★★★ 4.9</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp7" aria-live="polite"></div>
+        </article>
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&h=800&fit=crop&crop=top"
+                 alt="Track Jacket '97 — Chaqueta deportiva franjas laterales"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp8','55.00','Track Jacket 97')">Comprar — $55.00</button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Sport 90s</div>
+            <h3 class="product-name" itemprop="name">Track Jacket '97</h3>
+            <p class="product-desc-short">Franjas laterales, cierre completo, tela transpirable premium.</p>
+            <div class="product-footer">
+              <div class="product-price">$55.00</div>
+              <div class="product-rating">★★★★☆ 4.6</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp8" aria-live="polite"></div>
+        </article>
+
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <div class="product-img-wrap">
+            <img class="product-real-img"
+                 src="https://images.unsplash.com/photo-1578932750294-f5075e85f44a?w=600&h=800&fit=crop&crop=top"
+                 alt="Ski Anorak '91 — Anorak impermeable rojo amarillo negro"
+                 loading="lazy" itemprop="image"/>
+            <div class="product-tag">Invierno</div>
+            <div class="product-overlay"></div>
+            <button class="btn-buy" onclick="togglePayPal('pp9','84.99','Ski Anorak 91')">Comprar — $84.99</button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Sport 90s</div>
+            <h3 class="product-name" itemprop="name">Ski Anorak '91</h3>
+            <p class="product-desc-short">Colores bloqueados rojo/amarillo/negro. 100% impermeable.</p>
+            <div class="product-footer">
+              <div class="product-price">$84.99</div>
+              <div class="product-rating">★★★★★ 4.8</div>
+            </div>
+          </div>
+          <div class="paypal-wrap" id="pp9" aria-live="polite"></div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- RASTREO -->
+<section class="tracker-section" id="rastreo" aria-labelledby="rastreo-title">
+  <div class="tracker-inner">
+    <div class="section-eyebrow">Logística</div>
+    <h2 class="section-title" id="rastreo-title">Rastrear <em>Envío</em></h2>
+    <div class="tracker-form" role="search">
+      <label for="trackIn" style="position:absolute;left:-9999px">Número de seguimiento</label>
+      <input class="tracker-input" id="trackIn" type="search"
+             placeholder="Ingresa tu código — Ej: RC-2024-00123"
+             maxlength="25" autocomplete="off"
+             aria-label="Código de seguimiento"/>
+      <button class="tracker-submit" onclick="doTrack()" aria-label="Rastrear">Rastrear</button>
+    </div>
+
+    <div class="track-steps" id="tSteps" style="--progress:0%" aria-hidden="true">
+      <div class="step-item"><div class="step-dot" id="s1">1</div><div class="step-label">Pedido<br>recibido</div></div>
+      <div class="step-item"><div class="step-dot" id="s2">2</div><div class="step-label">En<br>empaque</div></div>
+      <div class="step-item"><div class="step-dot" id="s3">3</div><div class="step-label">En<br>camino</div></div>
+      <div class="step-item"><div class="step-dot" id="s4">4</div><div class="step-label">En tu<br>ciudad</div></div>
+      <div class="step-item"><div class="step-dot" id="s5">✓</div><div class="step-label">Entregado</div></div>
+    </div>
+
+    <div class="track-result" id="tResult" role="region" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACTO -->
+<section class="contact-section" id="contacto" aria-labelledby="contact-title">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="section-eyebrow">Información</div>
+      <h2 class="section-title" id="contact-title">Contáctanos <em>hoy</em></h2>
+      <p class="contact-tagline">
+        Estamos en Tierras Altas, Chiriquí — el corazón de la moda retro en Panamá.
+        Escríbenos o llámanos, con gusto te atendemos.
+      </p>
+    </div>
+
+    <div class="contact-grid" itemscope itemtype="https://schema.org/LocalBusiness">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <div class="contact-label">Ubicación</div>
+        <div class="contact-value" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Tierras Altas</span>,<br>
+          <span itemprop="addressRegion">Chiriquí</span>,
+          <span itemprop="addressCountry">Panamá</span>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <div class="contact-label">Teléfono</div>
+        <div class="contact-value">
+          <a href="tel:+50761660759" itemprop="telephone">+507 6166-0759</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-label">Correo electrónico</div>
+        <div class="contact-value">
+          <a href="mailto:shiloexe9@gmail.com" itemprop="email">shiloexe9@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">👤</div>
+        <div class="contact-label">Propietario</div>
+        <div class="contact-value" itemprop="founder">
+          Edwin Pitty
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-brand">Retro<span>Coats</span>™</div>
+  <ul class="footer-links">
+    <li><a href="#colecciones">Colecciones</a></li>
+    <li><a href="#rastreo">Rastreo</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="/sitemap.xml" rel="nofollow">Sitemap</a></li>
+  </ul>
+  <div class="footer-copy">© <span id="yr">2024</span> RetroCoats™ · Edwin Pitty · Panamá</div>
+</footer>
+
+<!-- SCHEMA.ORG -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["ClothingStore","LocalBusiness"],
+  "@id":"https://retrocoats.netlify.app/#business",
+  "name":"RetroCoats™",
+  "description":"Tienda especializada en abrigos retro de los años 90s en Panamá.",
+  "url":"https://retrocoats.netlify.app",
+  "telephone":"+507-6166-0759",
+  "email":"shiloexe9@gmail.com",
+  "address":{"@type":"PostalAddress","addressLocality":"Tierras Altas","addressRegion":"Chiriquí","addressCountry":"PA"},
+  "geo":{"@type":"GeoCoordinates","latitude":8.7667,"longitude":-82.5667},
+  "priceRange":"$$",
+  "currenciesAccepted":"USD",
+  "paymentAccepted":"PayPal"
+}
+</script>
+
+<script>
+'use strict';
+
+/* ── TEMA ─────────────────────────────────────────────── */
+(function(){
+  const s = localStorage.getItem('rcTheme');
+  const d = window.matchMedia('(prefers-color-scheme:dark)').matches;
+  document.documentElement.setAttribute('data-theme', s || (d?'dark':'light'));
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+
+const themeBtn = document.getElementById('theme-btn');
+themeBtn.addEventListener('click',()=>{
+  const t = document.documentElement.getAttribute('data-theme');
+  const n = t==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',n);
+  localStorage.setItem('rcTheme',n);
+  themeBtn.textContent = n==='dark'?'☀️':'🌙';
+});
+themeBtn.textContent = document.documentElement.getAttribute('data-theme')==='dark'?'☀️':'🌙';
+
+/* ── LOADER ───────────────────────────────────────────── */
+const loader = document.getElementById('loader');
+const prog   = document.getElementById('loaderProg');
+const ltxt   = document.getElementById('loaderTxt');
+const msgs   = ['Cargando colección','Preparando productos','Casi listo'];
+let p = 0;
+const iv = setInterval(()=>{
+  p = Math.min(p + Math.random()*22+6, 100);
+  prog.style.width = p+'%';
+  ltxt.textContent = msgs[Math.floor(p/36)]||msgs[2];
+  if(p>=100){
+    clearInterval(iv);
+    setTimeout(()=>loader.classList.add('out'),300);
+    setTimeout(()=>loader.remove(),1100);
+  }
+},110);
+
+/* ── CURSOR ───────────────────────────────────────────── */
+const cur  = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX; my=e.clientY;
+  cur.style.left=mx+'px'; cur.style.top=my+'px';
+});
+(function animRing(){
+  rx += (mx-rx)*.12; ry += (my-ry)*.12;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+})();
+document.querySelectorAll('a,button,.product-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.classList.add('hover');ring.classList.add('hover')});
+  el.addEventListener('mouseleave',()=>{cur.classList.remove('hover');ring.classList.remove('hover')});
+});
+// Ocultar en móvil
+if('ontouchstart' in window){
+  cur.style.display='none'; ring.style.display='none';
+}
+
+/* ── NAVBAR SCROLL ────────────────────────────────────── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled', window.scrollY>40);
+},{passive:true});
+
+/* ── LOGO 3D ──────────────────────────────────────────── */
+const logo3d = document.getElementById('logo3d');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+if(!reducedMotion){
+  // Mouse 3D tilt
+  document.addEventListener('mousemove',e=>{
+    const r = logo3d.getBoundingClientRect();
+    if(!r) return;
+    const cx = r.left + r.width/2;
+    const cy = r.top  + r.height/2;
+    const dx = (e.clientX - cx) / (window.innerWidth/2);
+    const dy = (e.clientY - cy) / (window.innerHeight/2);
+    logo3d.style.transform = `rotateY(${dx*18}deg) rotateX(${-dy*18}deg)`;
+  });
+
+  // Reset on mouse leave
+  document.addEventListener('mouseleave',()=>{
+    logo3d.style.transform='rotateY(0deg) rotateX(0deg)';
+  });
+
+  // Scroll parallax 3D
+  window.addEventListener('scroll',()=>{
+    const scrollY = window.scrollY;
+    const rotY = (scrollY / window.innerHeight) * 25;
+    const rotX = (scrollY / window.innerHeight) * -10;
+    // Solo aplicar si el mouse no está encima
+    if(!logo3d.matches(':hover')){
+      logo3d.style.transform = `rotateY(${rotY}deg) rotateX(${rotX}deg)`;
+    }
+  },{passive:true});
+
+  // Touch 3D para móvil
+  document.addEventListener('touchmove',e=>{
+    const t = e.touches[0];
+    const dx = (t.clientX / window.innerWidth  - 0.5) * 2;
+    const dy = (t.clientY / window.innerHeight - 0.5) * 2;
+    logo3d.style.transform = `rotateY(${dx*15}deg) rotateX(${-dy*15}deg)`;
+  },{passive:true});
+}
+
+/* ── TABS ─────────────────────────────────────────────── */
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected','true');
+    document.getElementById('tpanel-'+btn.dataset.tab).classList.add('active');
+  });
+  btn.addEventListener('keydown',e=>{
+    const tabs=[...document.querySelectorAll('.tab-btn')];
+    const i=tabs.indexOf(btn);
+    if(e.key==='ArrowRight'){e.preventDefault();tabs[(i+1)%tabs.length].click();tabs[(i+1)%tabs.length].focus()}
+    if(e.key==='ArrowLeft') {e.preventDefault();tabs[(i-1+tabs.length)%tabs.length].click();tabs[(i-1+tabs.length)%tabs.length].focus()}
+  });
+});
+
+/* ── PAYPAL ───────────────────────────────────────────── */
+const rendered = new Set();
+function togglePayPal(id, amount, name){
+  const el  = document.getElementById(id);
+  const vis = el.style.display==='block';
+  // Cerrar todos
+  document.querySelectorAll('.paypal-wrap').forEach(w=>w.style.display='none');
+  if(vis){return}
+  el.style.display='block';
+  el.scrollIntoView({behavior:'smooth',block:'nearest'});
+  if(rendered.has(id)) return;
+  rendered.add(id);
+  if(typeof paypal==='undefined'){
+    el.innerHTML='<div style="padding:12px;font-size:.75rem;color:#888;font-family:Montserrat,sans-serif;letter-spacing:.05em;">⚠️ Configura tu PayPal Client ID para activar pagos.</div>';
+    return;
+  }
+  paypal.Buttons({
+    style:{layout:'vertical',color:'black',shape:'rect',label:'pay',height:40},
+    createOrder:(d,a)=>a.order.create({
+      purchase_units:[{amount:{value:parseFloat(amount).toFixed(2),currency_code:'USD'},description:name+' — RetroCoats™'}]
+    }),
+    onApprove:(d,a)=>a.order.capture().then(det=>{
+      alert('✅ Pago exitoso, '+(det.payer?.name?.given_name||'cliente')+'!\nOrden: '+d.orderID);
+      el.style.display='none';
+    }),
+    onError:()=>alert('Error en el pago. Intenta de nuevo o llámanos: +507 6166-0759.'),
+    onCancel:()=>{el.style.display='none'}
+  }).render('#'+id);
+}
+
+/* ── RASTREO ──────────────────────────────────────────── */
+function doTrack(){
+  const raw   = document.getElementById('trackIn').value;
+  const input = raw.replace(/[^A-Z0-9\-]/gi,'').toUpperCase().substring(0,25);
+  const res   = document.getElementById('tResult');
+  const steps = document.getElementById('tSteps');
+  if(input.length<5){
+    res.innerHTML='<span style="color:#c0392b">Ingresa un código válido (mínimo 5 caracteres).</span>';
+    res.classList.add('show'); return;
+  }
+  const idx = input.charCodeAt(input.length-1)%5;
+  const st = [
+    {s:1,p:'5%',  l:'Pedido recibido', d:'Tu pedido fue registrado y está siendo verificado.'},
+    {s:2,p:'27%', l:'En empaque',      d:'Estamos empacando tu abrigo cuidadosamente.'},
+    {s:3,p:'52%', l:'En camino',       d:'Tu paquete está en ruta al centro de distribución.'},
+    {s:4,p:'77%', l:'En tu ciudad',    d:'Llegó a Chiriquí y está en reparto local.'},
+    {s:5,p:'100%',l:'Entregado',       d:'¡Tu abrigo fue entregado! Gracias por elegir RetroCoats™.'},
+  ][idx];
+  steps.style.setProperty('--progress',st.p);
+  ['s1','s2','s3','s4','s5'].forEach((id,i)=>{
+    const d=document.getElementById(id);
+    d.className='step-dot';
+    if(i+1<st.s) d.classList.add('done');
+    if(i+1===st.s) d.classList.add('active');
+  });
+  const ts = new Date().toLocaleString('es-PA',{dateStyle:'medium',timeStyle:'short'});
+  res.innerHTML=`
+    <div><span class="track-hl">Código:</span> ${input}</div>
+    <div><span class="track-hl">Estado:</span> ${st.l}</div>
+    <div><span class="track-hl">Actualizado:</span> ${ts}</div>
+    <div style="margin-top:12px;padding-left:12px;border-left:2px solid var(--accent)">${st.d}</div>
+    <div style="margin-top:10px;font-size:.72rem">¿Dudas? <a href="tel:+50761660759" style="color:var(--accent)">+507 6166-0759</a></div>
+  `;
+  res.classList.add('show');
+}
+document.getElementById('trackIn').addEventListener('keydown',e=>{if(e.key==='Enter')doTrack()});
+
+/* ── SERVICE WORKER ───────────────────────────────────── */
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('/sw.js').catch(()=>{});
+  });
+}
+</script>
+</body>
+</html>

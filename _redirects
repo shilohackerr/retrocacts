@@ -1,0 +1,18 @@
+# ============================================================
+# _redirects — RetroCoats™
+# Equivalente al .htaccess para Netlify
+# Coloca este archivo en la raíz de tu carpeta retrocoats/
+# ============================================================
+
+# Redirigir URLs sin extensión .html (URLs limpias)
+/clasicos       /pages/clasicos.html        200
+/urban          /pages/urban.html           200
+/sport          /pages/sport90s.html        200
+/rastreo        /pages/rastreo.html         200
+/contacto       /pages/contacto.html        200
+/nosotros       /pages/nosotros.html        200
+/privacidad     /pages/privacidad.html      200
+/terminos       /pages/terminos.html        200
+
+# Página de error 404
+/*              /pages/404.html             404

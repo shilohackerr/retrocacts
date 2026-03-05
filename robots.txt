@@ -1,0 +1,46 @@
+# ============================================================
+# robots.txt — RetroCoats™
+# Actualizado: 2024-01-01
+# Contacto SEO: shiloexe9@gmail.com
+# ============================================================
+
+User-agent: *
+Allow: /
+Allow: /pages/
+Allow: /assets/images/
+
+# Bloquear rutas sensibles o de administración
+Disallow: /api/
+Disallow: /config/
+Disallow: /admin/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /404.html
+Disallow: /500.html
+
+# Bloquear parámetros de sesión y UTM duplicados para evitar contenido duplicado
+Disallow: /*?sessionid=
+Disallow: /*?ref=
+Disallow: /*?utm_source=
+
+# Permitir Googlebot acceso a recursos CSS y JS (importante para renderizado)
+User-agent: Googlebot
+Allow: /assets/css/
+Allow: /assets/js/
+Disallow: /api/
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap principal
+Sitemap: https://www.retrocoats.com/sitemap.xml
+Sitemap: https://www.retrocoats.com/sitemap-products.xml
+Sitemap: https://www.retrocoats.com/sitemap-images.xml
